@@ -1,0 +1,25 @@
+server:
+  servlet:
+    contextPath: /
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            client-id: 0oaw7wun1I3pg1cxB4x6
+            client-secret: Dp3PV5-mS9iFUy1u4Af3vnD0-mq9kqeXqGxEEatV
+            scope: openid, email, profile
+        provider:
+          okta:
+            issuer-uri: https://dev-532492.okta.com/oauth2/default
+#security:
+#  oauth2:
+#    resource:
+#      userInfoUri: https://dev-532492.okta.com/oauth2/default/v1/userinfo
+#okta:
+#  oauth2:
+#    clientId: 0oaw2jjlxvjmkI3eJ4x6
+#    issuer: https://dev-532492.okta.com/oauth2/default
